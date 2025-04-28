@@ -1,0 +1,35 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 15,
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": false,
+                "encrypt": false,
+                "trustServerCertificate": false
+            },
+            "previewLimit": 50,
+            "server": "mssql02-farm21.uni5.net",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "CRM",
+            "database": "app",
+            "username": "app",
+            "password": "CP$cg!!sqJvGHd"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "grupoasbevi.com.br",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "TECH",
+            "database": "grupo973_technology",
+            "username": "grupo973_tech",
+            "password": "Atlas032025*"
+        }
+    ]
+}

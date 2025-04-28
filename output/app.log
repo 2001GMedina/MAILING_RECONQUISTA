@@ -1,0 +1,165 @@
+2025-04-28 14:55:33 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 14:55:33 [INFO] - Carregando query SQL.
+2025-04-28 14:55:33 [INFO] - Conectando ao SQL Server.
+2025-04-28 14:55:33 [ERROR] - Erro durante o processo: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Nome da fonte de dados não encontrado e nenhum driver padrão especificado (0) (SQLDriverConnect)')
+Traceback (most recent call last):
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\main.py", line 34, in main
+    conn = connect_sql_server(CONN_STRING)
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\mods\sql_server.py", line 5, in connect_sql_server
+    conn = pyodbc.connect(conn_str)
+pyodbc.InterfaceError: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Nome da fonte de dados não encontrado e nenhum driver padrão especificado (0) (SQLDriverConnect)')
+2025-04-28 15:05:09 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 15:05:09 [INFO] - Carregando query SQL.
+2025-04-28 15:05:09 [INFO] - Conectando ao SQL Server.
+2025-04-28 15:05:09 [ERROR] - Erro durante o processo: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]SSL Provider: A cadeia de certificação foi emitida por uma autoridade que não é de confiança.\r\n (-2146893019) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Client unable to establish connection. For solutions related to encryption errors, see https://go.microsoft.com/fwlink/?linkid=2226722 (-2146893019)')
+Traceback (most recent call last):
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\main.py", line 34, in main
+    conn = connect_sql_server(CONN_STRING)
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\mods\sql_server.py", line 5, in connect_sql_server
+    conn = pyodbc.connect(conn_str)
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]SSL Provider: A cadeia de certificação foi emitida por uma autoridade que não é de confiança.\r\n (-2146893019) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Client unable to establish connection. For solutions related to encryption errors, see https://go.microsoft.com/fwlink/?linkid=2226722 (-2146893019)')
+2025-04-28 15:05:37 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 15:05:37 [INFO] - Carregando query SQL.
+2025-04-28 15:05:37 [INFO] - Conectando ao SQL Server.
+2025-04-28 15:05:37 [ERROR] - Erro durante o processo: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]SSL Provider: A cadeia de certificação foi emitida por uma autoridade que não é de confiança.\r\n (-2146893019) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Client unable to establish connection. For solutions related to encryption errors, see https://go.microsoft.com/fwlink/?linkid=2226722 (-2146893019)')
+Traceback (most recent call last):
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\main.py", line 34, in main
+    conn = connect_sql_server(CONN_STRING)
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\mods\sql_server.py", line 5, in connect_sql_server
+    conn = pyodbc.connect(conn_str)
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]SSL Provider: A cadeia de certificação foi emitida por uma autoridade que não é de confiança.\r\n (-2146893019) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Client unable to establish connection. For solutions related to encryption errors, see https://go.microsoft.com/fwlink/?linkid=2226722 (-2146893019)')
+2025-04-28 15:06:01 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 15:06:01 [INFO] - Carregando query SQL.
+2025-04-28 15:06:01 [INFO] - Conectando ao SQL Server.
+2025-04-28 15:06:02 [INFO] - Executando a consulta.
+2025-04-28 15:06:02 [INFO] - Conectando ao Google Sheets.
+2025-04-28 15:06:02 [INFO] - Limpando a worksheet.
+2025-04-28 15:06:03 [ERROR] - Erro durante o processo: 
+Traceback (most recent call last):
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\client.py", line 168, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\http_client.py", line 128, in request
+    raise APIError(response)
+gspread.exceptions.APIError: APIError: [403]: The caller does not have permission
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\main.py", line 43, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\mods\google_sheets.py", line 32, in clear_worksheet
+    spreadsheet = client.open_by_url(url)
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\client.py", line 173, in open_by_key
+    raise PermissionError from ex
+PermissionError
+2025-04-28 15:08:01 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 15:08:01 [INFO] - Carregando query SQL.
+2025-04-28 15:08:01 [INFO] - Conectando ao SQL Server.
+2025-04-28 15:08:01 [INFO] - Executando a consulta.
+2025-04-28 15:08:02 [INFO] - Conectando ao Google Sheets.
+2025-04-28 15:08:02 [INFO] - Limpando a worksheet.
+2025-04-28 15:08:04 [ERROR] - Erro durante o processo: Nome_da_Aba
+Traceback (most recent call last):
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\spreadsheet.py", line 327, in worksheet
+    item = finditem(
+        lambda x: x["properties"]["title"] == title,
+        sheet_data["sheets"],
+    )
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\utils.py", line 224, in finditem
+    return next(item for item in seq if func(item))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\main.py", line 43, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\mods\google_sheets.py", line 33, in clear_worksheet
+    worksheet = spreadsheet.worksheet(worksheet_name)
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\spreadsheet.py", line 333, in worksheet
+    raise WorksheetNotFound(title)
+gspread.exceptions.WorksheetNotFound: Nome_da_Aba
+2025-04-28 15:08:24 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 15:08:24 [INFO] - Carregando query SQL.
+2025-04-28 15:08:24 [INFO] - Conectando ao SQL Server.
+2025-04-28 15:08:25 [INFO] - Executando a consulta.
+2025-04-28 15:08:26 [INFO] - Conectando ao Google Sheets.
+2025-04-28 15:08:26 [INFO] - Limpando a worksheet.
+2025-04-28 15:08:27 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 15:08:28 [ERROR] - Erro durante o processo: Object of type Timestamp is not JSON serializable
+Traceback (most recent call last):
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\main.py", line 46, in main
+    insert_dataframe_to_worksheet(client, GOOGLE_URL, WORKSHEET_NAME, df)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\MAILING_RECONQUISTA\mods\google_sheets.py", line 44, in insert_dataframe_to_worksheet
+    worksheet.update('A1', data)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\worksheet.py", line 1242, in update
+    response = self.client.values_update(
+        self.spreadsheet_id,
+    ...<2 lines>...
+        body={"values": values, "majorDimension": major_dimension},
+    )
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\http_client.py", line 173, in values_update
+    r = self.request("put", url, params=params, json=body)
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+        method=method,
+    ...<6 lines>...
+        timeout=self.timeout,
+    )
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+        method,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\models.py", line 370, in prepare
+    self.prepare_body(data, files, json)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\requests\models.py", line 510, in prepare_body
+    body = complexjson.dumps(json, allow_nan=False)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1008.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Timestamp is not JSON serializable
+2025-04-28 15:11:04 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 15:11:04 [INFO] - Carregando query SQL.
+2025-04-28 15:11:04 [INFO] - Conectando ao SQL Server.
+2025-04-28 15:11:04 [INFO] - Executando a consulta.
+2025-04-28 15:11:05 [INFO] - Conectando ao Google Sheets.
+2025-04-28 15:11:05 [INFO] - Formating dates
+2025-04-28 15:11:05 [INFO] - Limpando a worksheet.
+2025-04-28 15:11:06 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 15:11:07 [INFO] - Processo finalizado com sucesso.
