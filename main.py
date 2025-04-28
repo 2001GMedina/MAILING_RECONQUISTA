@@ -4,6 +4,9 @@ from mods.sql_server import connect_sql_server, run_query
 from mods.google_sheets import auth_google_sheets, clear_worksheet, insert_dataframe_to_worksheet
 from mods.logger import setup_logger, get_logger
 
+# Define a pasta base (onde o main.py está localizado)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def load_query(file_path: str) -> str:
     with open(file_path, 'r', encoding='utf-8') as file:
         query = file.read()
@@ -22,10 +25,10 @@ def main():
 
         # Variáveis
         GOOGLE_URL = os.getenv('URL_MAILING')
-        GOOGLE_CREDS = 'config/g_creds.json'
+        GOOGLE_CREDS = os.path.join(BASE_DIR, 'config', 'g_creds.json')
         CONN_STRING = os.getenv('CONN_STRING')
         WORKSHEET_NAME = 'MAILING_RECONQUISTA'
-        QUERY_PATH = 'queries/select_mailing.sql'
+        QUERY_PATH = os.path.join(BASE_DIR, 'queries', 'select_mailing.sql')
 
         logger.info('Carregando query SQL.')
         SQL_QUERY = load_query(QUERY_PATH)
@@ -39,7 +42,7 @@ def main():
         logger.info('Conectando ao Google Sheets.')
         client = auth_google_sheets(GOOGLE_CREDS)
 
-        logger.info('Formating dates')
+        logger.info('Formatando datas.')
         for col in df.select_dtypes(include=["datetime64[ns]"]).columns:
             df[col] = df[col].dt.strftime("%d/%m/%Y")
 
@@ -53,6 +56,7 @@ def main():
 
     except Exception as e:
         logger.error(f'Erro durante o processo: {e}', exc_info=True)
+        raise  # <- Broker for Jenkins
 
 if __name__ == '__main__':
     main()

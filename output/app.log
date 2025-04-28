@@ -172,3 +172,39 @@ TypeError: Object of type Timestamp is not JSON serializable
 2025-04-28 16:58:27 [INFO] - Limpando a worksheet.
 2025-04-28 16:58:28 [INFO] - Inserindo novos dados na worksheet.
 2025-04-28 16:58:29 [INFO] - Processo finalizado com sucesso.
+2025-04-28 17:21:44 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 17:21:44 [INFO] - Carregando query SQL.
+2025-04-28 17:21:44 [INFO] - Conectando ao SQL Server.
+2025-04-28 17:21:45 [INFO] - Executando a consulta.
+2025-04-28 17:21:45 [INFO] - Conectando ao Google Sheets.
+2025-04-28 17:21:45 [INFO] - Formating dates
+2025-04-28 17:21:45 [INFO] - Limpando a worksheet.
+2025-04-28 17:21:47 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 17:21:48 [INFO] - Processo finalizado com sucesso.
+2025-04-28 17:45:45 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 17:45:45 [INFO] - Carregando query SQL.
+2025-04-28 17:45:45 [INFO] - Conectando ao SQL Server.
+2025-04-28 17:45:46 [INFO] - Executando a consulta.
+2025-04-28 17:45:46 [INFO] - Conectando ao Google Sheets.
+2025-04-28 17:45:46 [INFO] - Formating dates
+2025-04-28 17:45:46 [INFO] - Limpando a worksheet.
+2025-04-28 17:45:47 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 17:45:48 [INFO] - Processo finalizado com sucesso.
+2025-04-28 17:46:26 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 17:46:26 [INFO] - Carregando query SQL.
+2025-04-28 17:46:26 [INFO] - Conectando ao SQL Server.
+2025-04-28 17:46:26 [INFO] - Executando a consulta.
+2025-04-28 17:46:26 [INFO] - Conectando ao Google Sheets.
+2025-04-28 17:46:26 [INFO] - Formating dates
+2025-04-28 17:46:26 [INFO] - Limpando a worksheet.
+2025-04-28 17:46:27 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 17:46:28 [INFO] - Processo finalizado com sucesso.
+2025-04-28 17:54:57 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 17:54:57 [INFO] - Carregando query SQL.
+2025-04-28 17:54:57 [INFO] - Conectando ao SQL Server.
+2025-04-28 17:54:57 [INFO] - Executando a consulta.
+2025-04-28 17:54:58 [INFO] - Conectando ao Google Sheets.
+2025-04-28 17:54:58 [INFO] - Formatando datas.
+2025-04-28 17:54:58 [INFO] - Limpando a worksheet.
+2025-04-28 17:54:59 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 17:55:00 [INFO] - Processo finalizado com sucesso.
