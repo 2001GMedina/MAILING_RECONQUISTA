@@ -163,3 +163,12 @@ TypeError: Object of type Timestamp is not JSON serializable
 2025-04-28 15:11:05 [INFO] - Limpando a worksheet.
 2025-04-28 15:11:06 [INFO] - Inserindo novos dados na worksheet.
 2025-04-28 15:11:07 [INFO] - Processo finalizado com sucesso.
+2025-04-28 16:58:26 [INFO] - Iniciando o processo de atualização de dados.
+2025-04-28 16:58:26 [INFO] - Carregando query SQL.
+2025-04-28 16:58:26 [INFO] - Conectando ao SQL Server.
+2025-04-28 16:58:26 [INFO] - Executando a consulta.
+2025-04-28 16:58:27 [INFO] - Conectando ao Google Sheets.
+2025-04-28 16:58:27 [INFO] - Formating dates
+2025-04-28 16:58:27 [INFO] - Limpando a worksheet.
+2025-04-28 16:58:28 [INFO] - Inserindo novos dados na worksheet.
+2025-04-28 16:58:29 [INFO] - Processo finalizado com sucesso.
